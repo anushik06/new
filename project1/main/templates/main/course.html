@@ -1,0 +1,202 @@
+{% load static %}
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main/css/course.css' %}">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/main/img/favicon_ioi/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/main/img/favicon_ioi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/main/img/favicon_ioi/favicon-16x16.png">
+  <link rel="manifest" href="static/main/img/favicon_ioi/site.webmanifest">
+
+    <title>FiG</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}"><img width="40px" height="40px" src="static/main/img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="{% url 'home' %}">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'about' %}">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'course' %}">Курсы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#top">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<section>
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2">
+
+    </div>
+
+    <div class="col-lg-7">
+
+      <img class="my-3" src="static/main/img/kursy.jpg">
+        <h1>8 бесплатных курсов по финансовой грамотности</h1>
+      <p class="mb-4">Вопросом «куда утекают деньги» задавался практически каждый, вне зависимости от уровня и скорости роста дохода. Деньги будут «утекать» до тех пор, пока вы не научитесь распоряжаться личными финансами и понимать основы функционирования экономических систем. Мы сделали подборку из восьми бесплатных онлайн-курсов по финансовой грамотности, после прохождения которых вы научитесь правильно ставить финансовые цели и достигать их.</p>
+
+      <div class="container-fluid blanks">
+        <div class="row">
+          <div class="col-lg-4">
+          <img src="static/main/img/f1.jpg" alt="...">
+          </div>
+           <div class="col">
+          <a href="#"><h4 >Управление личными финансами</h4></a>
+          <p><span>Организатор:</span>  НИУ ВШЭ</p>
+          <p><span>Длительность:</span>  11 часов</p>
+           <p>В первую очередь этот курс нужен для понимания того, что грамотное управление личными материальными ресурсами — один из необходимых навыков современного человека. Это умение поможет человеку стать состоятельным и независимым. Изучение курса позволит лучше ориентироваться в текущих финансовых вопросах и находить оптимальные способы управления личным капиталом. Вы научитесь распределять его по трем элементам: текущий, страховой и инвестиционный капитал. Также в курсе несколько лекций посвящены теме инвестиций.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid blanks">
+        <div class="row">
+          <div class="col-lg-4">
+          <img src="static/main/img/f2.jpg" alt="...">
+          </div>
+           <div class="col">
+          <a href="#"><h4 >Фондовый рынок</h4></a>
+          <p><span>Организатор:</span> НИУ ВШЭ </p>
+          <p><span>Длительность:</span> 3 часа </p>
+           <p>Цикл лекций доцента Департамента финансов факультета экономических наук НИУ ВШЭ Сергея Меньшикова состоит из трех частей. Первая посвящена акциям для частного инвестора. Во второй — рассказывается про облигации для частного инвестора. Третья часть посвящена инвестиционным фондам.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid blanks">
+        <div class="row">
+          <div class="col-lg-4">
+          <img src="static/main/img/f3.jpg" alt="...">
+          </div>
+           <div class="col">
+          <a href="#"><h4 >Финансовая грамотность</h4></a>
+          <p><span>Организатор:</span> СПБГУ </p>
+          <p><span>Длительность:</span> 11 недель</p>
+           <p>В рамках курса вы узнаете об основных источниках финансовых ресурсов населения, возможности прибыльного размещения свободных денег, их сбережения и накопления. Преподаватели СПБГУ расскажут о ловушках, которые часто случаются с первыми заработанными средствами, о том, как осуществить масштабные жизненные планы и сберечь средства.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid blanks">
+        <div class="row">
+          <div class="col-lg-4">
+          <img src="static/main/img/f4.jpg" alt="...">
+          </div>
+           <div class="col">
+          <a href="#"><h4 >Инвестиции в будущее</h4></a>
+          <p><span>Организатор:</span> Российский экономический университет имени Г.В. Плеханова </p>
+
+           <p>В этом курсе вы найдете ответы на основные вопросы о финансах. Как ставить цели? Зачем нам нужны банки и какую функцию они выполняют? Что такое инвестиции и как их оценивать? Будут раскрыты такие темы как риски и доходность инвестиций, функции денег, система налогообложения, современные кредитные продукты, депозиты.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid blanks">
+        <div class="row">
+          <div class="col-lg-4">
+          <img src="static/main/img/f5.jpg" alt="...">
+          </div>
+           <div class="col">
+          <a href="#"><h4 >Банковское дело и финансы</h4></a>
+          <p><span>Организатор:</span> СберУниверситет</p>
+          <p><span>Длительность:</span>11 часов </p>
+           <p>Курс полезен тем, кто хочет разобраться в устройстве и функциях банков. Например, вы узнаете, почему у банков такие высокие проценты по кредитам, как работают денежные переводы и зачем нужны комиссии, как банки зарабатывают на фондовом рынке. Вы поймете, как на самом деле происходят процессы в банке, где вы храните свои деньги.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid blanks">
+        <div class="row">
+          <div class="col-lg-4">
+          <img src="static/main/img/f6.jpg" alt="...">
+          </div>
+           <div class="col">
+          <a href="#"><h4 >Финансовая грамотность</h4></a>
+          <p><span>Организатор:</span> 4Brain </p>
+
+           <p>В этом текстовом курсе вы познакомитесь с основами финансовой грамотности и узнаете, как иначе мыслить и распоряжаться своими сбережениями, чтобы достигать поставленных целей. Программа курса состоит из 6 уроков: суть денег, планирование и учет, финансовая система, инвестирование, финансовый анализ и мышление.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid blanks">
+        <div class="row">
+          <div class="col-lg-4">
+          <img class="my-4"src="static/main/img/f7.jpg" alt="...">
+          </div>
+           <div class="col">
+          <a href="#"><h4 class="mt-4" >Основы финансовой грамотности</h4></a>
+          <p><span>Организатор:</span>  Zillion </p>
+          <p><span>Длительность:</span> 70 часов </p>
+           <p>Основная цель курса — комплексное освещение тем финансовой грамотности, базовых принципов формирования личного бюджета и планирования своих расходов. В курс вошли темы по личным финансам, развитию банковской системы, страхованию, недвижимости, фондовому рынку, стратегиям и рискам фондового рынка. Также вы узнаете о том, что такое электронные финансы, как работает система налогообложения и ознакомитесь с основами личной финансовой безопасности.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid blanks">
+        <div class="row">
+          <div class="col-lg-4">
+          <img src="static/main/img/f8.jpg" alt="...">
+          </div>
+           <div class="col">
+          <a href="#"><h4 >Азбука финансов</h4></a>
+          <p><span>Организатор:</span> Томский государственный университет систем управления и радиоэлектроники</p>
+          <p><span>Длительность:</span> 72 часа</p>
+           <p>Курс включает в себя 6 уроков, посвященных управлению финансами, инвестициям и кредитованию. Программа рассчитана на широкую аудиторию: сотрудников банков, работников пенсионных фондов, бухгалтеров, начинающих специалистов финансовых и инвестиционных организаций, а также всех, кто желает улучшить свои знания в вопросах управления личными финансами.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="col-lg-3">
+
+    </div>
+  </div>
+</div>
+</section>
+<footer class="mt-4" id="top">
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4  footer-text text-center">
+      <p class="footer-text"> Финансовая грамотность 2023</p>
+    </div>
+    <div class="col-lg-4 footer-text text-center">
+      <a class="foter-text" href="#" > <p class="footer-text"> Работа</p></a>
+      <a class="foter-text" href="#"><p class="footer-text"> Контакты</p></a>
+    </div>
+    <div class="col-lg-4 footer-text text-center">
+        <a href="https://web.telegram.org/k/" target="_blank"><img class="tg" src="static/main/img/tg.png"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img class="yt" src="static/main/img/yt.png"></a>
+        <a href="#"><img class="tg" src="static/main/img/phone.png"></a>
+     </div>
+    </div>
+  </div>
+
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
